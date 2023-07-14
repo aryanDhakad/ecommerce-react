@@ -1,7 +1,7 @@
 /* eslint-disable indent */
 import { FilterOutlined, ShoppingOutlined } from '@ant-design/icons';
 import * as ROUTE from '@/constants/routes';
-import logo from '@/images/logo-full.png';
+import logo from '@/images/logo.png';
 import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import {
@@ -71,20 +71,25 @@ const Navigation = () => {
       <div className="logo">
         <Link onClick={onClickLink} to="/"><img alt="Logo" src={logo} /></Link>
       </div>
-      <ul className="navigation-menu-main">
-        <li><NavLink activeClassName="navigation-menu-active" exact to={ROUTE.HOME}>Home</NavLink></li>
-        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.SHOP}>Shop</NavLink></li>
-        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.FEATURED_PRODUCTS}>Featured</NavLink></li>
-        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.RECOMMENDED_PRODUCTS}>Recommended</NavLink></li>
-      </ul>
-      {(pathname === ROUTE.SHOP || pathname === ROUTE.SEARCH) && (
+      
+      
+        <ul className="navigation-menu-main navbar-nav me-auto mb-2 mb-lg-0">
+          <li className="nav-item"><NavLink activeClassName="navigation-menu-active" exact to={ROUTE.HOME}>Home</NavLink></li>
+          <li className="nav-item"><NavLink activeClassName="navigation-menu-active" to={ROUTE.SHOP}>Shop</NavLink></li>
+          <li className="nav-item"><NavLink activeClassName="navigation-menu-active" to={ROUTE.FEATURED_PRODUCTS}>Featured</NavLink></li>
+          <li className="nav-item"><NavLink activeClassName="navigation-menu-active" to={ROUTE.RECOMMENDED_PRODUCTS}>Recommended</NavLink></li>
+           {(pathname === ROUTE.SHOP || pathname === ROUTE.SEARCH) && (
         <FiltersToggle>
           <button className="button-muted button-small" type="button">
             Filters &nbsp;
             <FilterOutlined />
           </button>
         </FiltersToggle>
-      )}
+          )}
+        </ul>
+      
+     
+    
       <SearchBar />
       <ul className="navigation-menu">
         <li className="navigation-menu-item">

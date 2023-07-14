@@ -23,7 +23,7 @@ const FeaturedProducts = () => {
             <h1>Featured Products</h1>
           </div>
           <div className="banner-img">
-            <img src={bannerImg} alt="" />
+            <img src="https://source.unsplash.com/1200x960/? chair,sofa,bed,Furniture" alt="feature products Loading ........" />
           </div>
         </div>
         <div className="display">

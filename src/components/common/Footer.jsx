@@ -1,5 +1,5 @@
 import * as Route from '@/constants/routes';
-import logo from '@/images/logo-full.png';
+import logo from '@/images/logo.png';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -14,9 +14,13 @@ const Footer = () => {
   return !visibleOnlyPath.includes(pathname) ? null : (
     <footer className="footer">
      
-      <div className="footer-col-2">
-        <img alt="Footer logo" className="footer-logo" src={logo} />
+      <div className="footer-box">
+        <h4>AakritiFurnish</h4>
+        <h5>|</h5>
+        <h5>All Rights are Reserved</h5>
+        <h5>|</h5>
         <h5>
+        Copyright
           &copy;&nbsp;
           {new Date().getFullYear()}
         </h5>
