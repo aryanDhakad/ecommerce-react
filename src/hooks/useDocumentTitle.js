@@ -5,7 +5,7 @@ const useDocumentTitle = (title) => {
     if (title) {
       document.title = title;
     } else {
-      document.title = 'Aakritifurnish - eCommerce React App';
+      document.title = 'AakritiFurnish';
     }
   }, [title]);
 };

@@ -32,7 +32,7 @@ const SignUp = ({ history }) => {
   const dispatch = useDispatch();
 
   useScrollTop();
-  useDocumentTitle('Sign Up | Salinaka');
+  useDocumentTitle('Sign Up | AakritiFurnish');
 
   useEffect(() => () => {
     dispatch(setAuthStatus(null));

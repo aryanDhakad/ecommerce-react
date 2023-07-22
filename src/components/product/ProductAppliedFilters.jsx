@@ -53,7 +53,7 @@ const ProductAppliedFilters = ({ filteredProductsCount }) => {
         )}
         {filter.brand && (
           <div className="pill-wrapper">
-            <span className="d-block">Brand</span>
+            <span className="d-block">Product</span>
             <div className="pill padding-right-l">
               <h5 className="pill-content margin-0">{filter.brand}</h5>
               <div className="pill-remove" onClick={onRemoveBrandFilter} role="presentation">
@@ -69,9 +69,9 @@ const ProductAppliedFilters = ({ filteredProductsCount }) => {
             <span className="d-block">Price Range</span>
             <div className="pill padding-right-l">
               <h5 className="pill-content margin-0">
-                $
+                ₹
                 {filter.minPrice}
-                - $
+                - ₹
                 {filter.maxPrice}
               </h5>
               <div

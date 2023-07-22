@@ -2,7 +2,7 @@
   "name": "ecommerce-react",
   "version": "1.2.0",
   "main": "index.js",
-  "author": "Julius Guevarra",
+  "author": "Akshit",
   "keywords": [
     "react-webpack",
     "boilerplate",
@@ -78,7 +78,7 @@
     "webfontloader": "^1.6.28",
     "yup": "^0.32.9"
   },
-  "description": "lenskart",
+  "description": "Aakritifurnish",
   "directories": {
     "test": "test"
   },
