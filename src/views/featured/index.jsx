@@ -1,11 +1,11 @@
 import { MessageDisplay } from '@/components/common';
 import { ProductShowcaseGrid } from '@/components/product';
 import { useDocumentTitle, useFeaturedProducts, useScrollTop } from '@/hooks';
-<<<<<<< HEAD
+
 // import bannerImg from '@/images/banner-guy.png';
-=======
-import bannerImg from '@/images/logo.png';
->>>>>>> db9c36f2968844bcced94fd151f030d9a06b313f
+
+// import bannerImg from '@/images/logo.png';
+
 import React from 'react';
 
 const FeaturedProducts = () => {
