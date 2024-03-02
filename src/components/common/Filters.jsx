@@ -80,7 +80,7 @@ const Filters = ({ closeModal }) => {
   return (
     <div className="filters">
       <div className="filters-field">
-        <span>Brand</span>
+        <span>Products</span>
         <br />
         <br />
         {products.length === 0 && isLoading ? (
@@ -92,11 +92,11 @@ const Filters = ({ closeModal }) => {
             disabled={isLoading || products.length === 0}
             onChange={onBrandFilterChange}
           >
-            <option value="">All Brands</option>
-            <option value="salt">Salt Maalat</option>
-            <option value="betsin">Betsin Maalat</option>
-            <option value="black">Black Kibal</option>
-            <option value="sexbomb">Sexbomb</option>
+            <option value="">Product Type</option>
+            <option value="sofa">Sofa</option>
+            <option value="bed">Bed</option>
+            <option value="wardrobe">Wardrobes</option>
+            <option value="dressing">Dressing</option>
           </select>
         )}
       </div>

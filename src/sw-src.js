@@ -9,7 +9,7 @@ let currentCacheNames = Object.assign({ precacheTemp: cacheNames.precache + "-te
 
 currentCacheNames.fonts = "googlefonts";
 registerRoute(
-	/https:\/\/fonts.(?:googleapis|gstatic).com\/(.*)/,
+	// /https:\/\/fonts.(?:googleapis|gstatic).com\/(.*)/,
 	new CacheFirst({
 		cacheName: currentCacheNames.fonts,
 		plugins: [new ExpirationPlugin({ maxEntries: 30 })]
@@ -31,7 +31,7 @@ self.addEventListener("activate", function (event) {
 						console.log("deleting cache", cacheName);
 						return caches.delete(cacheName);
 					})
-			);
-		})
-	);
-});
+				);
+			})
+		);
+	});
