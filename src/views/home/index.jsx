@@ -1,17 +1,19 @@
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { MessageDisplay } from '@/components/common';
 import { ProductShowcaseGrid } from '@/components/product';
-import { FEATURED_PRODUCTS, RECOMMENDED_PRODUCTS, SHOP } from '@/constants/routes';
+import { FEATURED_PRODUCTS, RECOMMENDED_PRODUCTS, SHOP } from 
+'@/constants/routes';
+import "../viewsglobal.scss"
 import {
   useDocumentTitle, useFeaturedProducts, useRecommendedProducts, useScrollTop
 } from '@/hooks';
-import bannerImg from '@/images/banner-girl.png';
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-  useDocumentTitle('Salinaka | Home');
+  useDocumentTitle('AakritiFurnish | Home');
   useScrollTop();
 
   const {
@@ -33,13 +35,12 @@ const Home = () => {
         <div className="banner">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>See</strong>
-              &nbsp;everything with&nbsp;
-              <strong>Clarity</strong>
+              <strong>Discover </strong>
+              &nbsp; the Art of &nbsp;
+              <strong>Living</strong>
             </h1>
             <p>
-              Buying eyewear should leave you happy and good-looking, with money in your pocket.
-              Glasses, sunglasses, and contacts—we’ve got your eyes covered.
+            Shop with us for exquisite furniture that reflects your style, elevates your spaces, and brings joy to everyday living. Explore our curated collection and create a home that inspires. Welcome to <strong>AakritiFurnish</strong>.
             </p>
             <br />
             <Link to={SHOP} className="button">
@@ -47,11 +48,11 @@ const Home = () => {
               <ArrowRightOutlined />
             </Link>
           </div>
-          <div className="banner-img"><img src={bannerImg} alt="" /></div>
+          <div className="banner-img"><img src="https://source.unsplash.com/1200x960/?Furniture" alt="Loading...." /></div>
         </div>
         <div className="display">
           <div className="display-header">
-            <h1>Featured Products</h1>
+            <h2>Featured Products</h2>
             <Link to={FEATURED_PRODUCTS}>See All</Link>
           </div>
           {(errorFeatured && !isLoadingFeatured) ? (
@@ -69,7 +70,7 @@ const Home = () => {
         </div>
         <div className="display">
           <div className="display-header">
-            <h1>Recommended Products</h1>
+            <h2>Recommended Products</h2>
             <Link to={RECOMMENDED_PRODUCTS}>See All</Link>
           </div>
           {(errorRecommended && !isLoadingRecommended) ? (

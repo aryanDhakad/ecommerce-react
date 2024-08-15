@@ -31,6 +31,8 @@
     width: 15rem;
     height: inherit;
     object-fit: contain;
+    background: $background-color;
+    color: $background-color;;
   }
 
   .logo a {
@@ -39,7 +41,10 @@
   }
 
   .searchbar {
-    width: 300px;
+    width: 200px;
+    border: 1px solid grey;
+    border-radius: 5px ;
+    overflow: hidden;
   }
 }
 
@@ -68,13 +73,10 @@
 
   li {
     display: inline-block;
-    
-    
     a {
       padding: 10px 15px;
       font-size: 1.4rem;
       opacity: .5;
-      
       &:hover {
         background: $background-color-01;
       }
@@ -93,6 +95,12 @@
   display: flex;
   align-items: center;
   margin-left: $xxl-size;
+  a{
+    border-radius: 10px;
+    
+  }
+  
+  
 }
 
 .navigation-menu-link {

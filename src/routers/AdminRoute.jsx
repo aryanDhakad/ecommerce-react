@@ -42,7 +42,7 @@ AdminRoute.propTypes = {
   role: PropType.string,
   component: PropType.func.isRequired,
   // eslint-disable-next-line react/require-default-props
-  rest: PropType.any
+  // rest: PropType.any
 };
 
 export default connect(mapStateToProps)(AdminRoute);

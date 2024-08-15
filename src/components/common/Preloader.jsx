@@ -1,5 +1,6 @@
 import React from 'react';
-import logoWordmark from '../../../static/logo-wordmark.png';
+import "./commanglobal.scss"
+import logo from '../../../static/logo.png';
 
 const Preloader = () => (
   <div className="preloader">
@@ -7,7 +8,8 @@ const Preloader = () => (
       <circle cx="20.62" cy="20.62" r="20.62" />
       <circle className="fill-white" cx="29.97" cy="14.93" r="6.58" />
     </svg>
-    <img alt="Salinaka logo wordmark" src={logoWordmark} />
+    <img alt="Aakritifurnish logo wordmark" src={logo} />
+    <h1 > Discover the Art of Living</h1>
   </div>
 );
 
